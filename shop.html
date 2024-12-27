@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>购物车</title>
+  <link rel="stylesheet" href="./css/shop.css">
+</head>
+
+<body>
+  <!-- 通用头部 -->
+  <div id="globalHeader" class="globalHeader"
+    style="position: relative; width: 100%; height: 277px; overflow: hidden; background-color: transparent; z-index: 999;">
+    <iframe src="./header.html" class="no_border tou" runat="server" scrolling="no"></iframe>
+  </div>
+  <h2 id="desc">
+    南优2号杂交水稻由袁隆平于1973年成功培育，是中国首个大规模应用的杂交水稻品种。其重要意义在于显著提高了水稻产量，平均每亩增产超过30%，有效解决了中国的粮食安全问题，并为全球粮食增产提供了宝贵经验。南优2号还展现出强抗逆性，适应多种环境，推动了杂交水稻在全球的普及，为解决世界饥饿问题做出了巨大贡献。袁隆平的这一成就不仅改变了中国的农业面貌，也深刻影响了全球的粮食安全格局。如今，<span>在本购物车页面中，各式各样的米制品琳琅满目，它们正是南优二号等高产优质水稻品种所打造的“米盛世”的缩影，见证了农业科技进步带来的丰收与繁荣。</span>
+  </h2>
+  <!-- 主要部分主要部分 -->
+  <div id="host">
+    <div class="cart">
+      <!-- 栏目头开始 -->
+      <div class="cart-head">
+        <div class="select-all"><input type="checkbox" id="selectAll" />全选</div>
+        <span class="commodity">商品</span>
+        <span class="price">价格</span>
+        <span class="num">数量</span>
+        <span class="sum">小计</span>
+        <span class="operation">操作</span>
+      </div>
+      <!-- 栏目头结束 -->
+      <!-- 商品列表开始 -->
+      <div class="items">
+        <div class="item">
+          <div class="box">
+            <input type="checkbox" name="" id="checkbox">
+            <img src="./images/product.png" alt="金龙鱼白米" />
+          </div>
+          <p>白米--金龙鱼</p>
+          <div class="item-price">￥27.9</div>
+          <div class="item-num">
+            <button id="left">-</button>
+            <input type="text" value="1" class="nums">
+            <button id="right">+</button>
+          </div>
+          <div class="item-sum">￥27.9</div>
+          <div class="item-opration">删除</div>
+        </div>
+        <!-- 商品1结束 -->
+        <div class="item">
+          <div class="box">
+            <input type="checkbox" name="" id="checkbox">
+            <img src="./images/product-fu.png" alt="白米" />
+          </div>
+          <p>白米--福临门</p>
+          <div class="item-price">￥25.5</div>
+          <div class="item-num">
+            <button id="left">-</button>
+            <input type="text" value="1" class="nums">
+            <button id="right">+</button>
+          </div>
+          <div class="item-sum">￥25.5</div>
+          <div class="item-opration">删除</div>
+        </div>
+        <!-- 商品2结束 -->
+        <div class="item">
+          <div class="box">
+            <input type="checkbox" name="" id="checkbox">
+            <img src="./images/product-bei.png" alt="白米" />
+          </div>
+          <p>白米--北大荒</p>
+          <div class="item-price">￥25.5</div>
+          <div class="item-num">
+            <button id="left">-</button>
+            <input type="text" value="1" class="nums">
+            <button id="right">+</button>
+          </div>
+          <div class="item-sum">￥29.9</div>
+          <div class="item-opration">删除</div>
+        </div>
+        <!-- 商品3结束 -->
+        <div class="item">
+          <div class="box">
+            <input type="checkbox" id="checkbox">
+            <img src="./images/product-ying.jpg" alt="白米" />
+          </div>
+          <p>米粉--英式</p>
+          <div class="item-price">￥133.9</div>
+          <div class="item-num">
+            <button id="left">-</button>
+            <input type="text" value="1" class="nums">
+            <button id="right">+</button>
+          </div>
+          <div class="item-sum">￥133.9</div>
+          <div class="item-opration">删除</div>
+        </div>
+        <!-- 商品4结束 -->
+      </div>
+      <!-- 商品列表结束 -->
+      <div class="cart-footer">
+        <div class="footer-total">总计</div>
+        <div class="footer-num">
+          <span>1</span>
+        </div>
+        <div class="footer-sum">￥25.5</div>
+        <div class="addAll">生成订单</div>
+      </div>
+      <!-- 列表结算结束 -->
+    </div>
+    <!-- .cart结束 -->
+  </div>
+  <!-- 尾部尾部 -->
+  <div id="globalFooter">
+    <iframe src="./footer.html" class="no_border" runat="server" scrolling="no"></iframe>
+  </div>
+  <script src="./js/jquery-1.8.3.min.js"></script>
+  <script src="./js/global.js"></script>
+  <script src="./js/shop.js"></script>
+</body>
+
+</html>

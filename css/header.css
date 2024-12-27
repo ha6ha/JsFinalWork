@@ -1,0 +1,77 @@
+@import url(./global.css);
+
+.top {
+  height: 32px;
+  background: #f9f9f9;
+  padding: 2px 20px 2px;
+  line-height: 32px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.top,
+.top a {
+  color: #646464;
+}
+
+.top a:hover {
+  color: orange;
+}
+
+.top .register {
+  margin-left: 5px;
+}
+
+nav {
+  height: 40px;
+  background: #6b501f;
+}
+
+nav ul {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+nav ul>li {
+  float: left;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+nav ul>li a {
+  display: block;
+  color: #fff;
+}
+
+nav ul>li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+nav ul>li:has(ul) {
+  position: relative;
+}
+
+nav ul>li:has(ul) ul {
+  position: relative;
+  border: 1px solid #6b501f;
+  border-top: 0;
+  width: 100%;
+  top: 0px;
+  left: -1px;
+  display: none;
+}
+
+nav ul>li:has(ul) ul li {
+  line-height: 40px;
+}
+
+nav ul>li:has(ul) ul a {
+  display: block;
+  background: #6b501f;
+}
+
+nav ul>li:has(ul) ul a:hover {
+  background: #f2f2f2;
+}

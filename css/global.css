@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "微软雅黑", "宋体", "Arial";
+}
+
+.clear {
+  clear: both;
+  overflow: hidden;
+  height: 0;
+}
+
+.fake {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.no_border {
+  border: none;
+}
+
+/* span标签展示 */
+.line {
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background: #e1e1e1;
+  margin: 0 10px;
+  /* 上、左右、下  */
+}
+
+.globalHeader {
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  height: 277px;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 999;
+}
+
+#globalHeader iframe,
+#globalFooter iframe {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.divide {
+  margin-bottom: 10px;
+}
+
+#globalFooter {
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  height: 60px;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  width: max-content;
+  height: 277px;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 999;
+}
+
+#mainContent {
+  position: relative;
+  width: 1080px;
+  height: 100%;
+  /* height: 2000px; */
+  /* background: pink; */
+  /* margin: 0 auto; */
+  margin: 20px auto 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
